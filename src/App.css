@@ -1,0 +1,116 @@
+.container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.815);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+
+.newsContainer {
+  height: 90%;
+  min-height: 90%;
+  width: 50%;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+  -webkit-box-shadow: 18px 2px 42px 0px rgba(0, 0, 0, 0.212);
+  -moz-box-shadow: 18px 2px 42px 0px rgba(0, 0, 0, 0.233);
+  box-shadow: 18px 2px 42px 0px rgba(0, 0, 0, 0.26);
+
+  & button {
+    font-size: 10px;
+  }
+}
+
+.newsHeader {
+  background-color: rgb(255, 55, 55);
+  width: 100%;
+  height: 15%;
+  border-radius: 16px 16px 0px 0px;
+  position: relative;
+  display: flex;
+  align-items: end;
+  flex-direction: row;
+  justify-content: space-between;
+
+  & .country {
+    display: flex;
+    flex-direction: row;
+    padding-left: 8px;
+
+    & button {
+      border-radius: 0px;
+      outline: none;
+    }
+  }
+
+  & .category {
+   display: flex;
+   border-bottom: red ;
+   z-index: 9;
+    
+   & button {
+    outline: none;
+    border-radius: 0px;
+   }
+  }
+
+  & .logo {
+    width: 156px;
+    height: 156px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+  }
+}
+
+.allNews {
+  & .spin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.allNews {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  max-height: 75%;
+  overflow-y: scroll;
+}
+
+.news {
+  width: 80%;
+  padding: 12px;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 6px 15px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 6px 15px -6px rgba(0,0,0,0.75);
+  box-shadow: 0px 6px 15px -6px rgba(0,0,0,0.75);
+}
+
+.newsImage {
+  width: 100%;
+  border-radius: 16px;
+}
