@@ -1,4 +1,4 @@
-# Weather App 
+# news App 
 
 -Monthly API withdrawal Limit 1000 / M
 
